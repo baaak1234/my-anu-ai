@@ -15,7 +15,7 @@ plt.ylabel("Euclidean Distance")
 plt.show()
 
 # 계층적 군집화 모델
-hc = AgglomerativeClustering(n_clusters=3, affinity='euclidean', linkage='ward')
+hc = AgglomerativeClustering(n_clusters=3, linkage='single')
 y_hc = hc.fit_predict(X)
 
 # 결과 시각화
